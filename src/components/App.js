@@ -2,23 +2,29 @@ import React, {Component, useEffect, useState} from "react";
 import "./../styles/App.css";
 
 function App() {
-  const [paragraph,setParagraph]=useState(<p id="para"></p>);
+  const [cond,setCond]=useState(false);
   
  const handleClick=()=>
  {
-   setParagraph(<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>);
+   setCond(true);
    console.log(paragraph);
  }
 
 
   return (
     <div id="main">
-      {paragraph}
       <button 
       id="click"
       onClick={handleClick}>
         Click me
       </button>
+
+      {cond ? 
+            <p id="para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
+            :
+            <div></div>
+      }
+      
       
     </div>
   );
