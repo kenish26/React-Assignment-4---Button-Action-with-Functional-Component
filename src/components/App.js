@@ -20,7 +20,7 @@ function App() {
       </button>
 
       {cond ? 
-            <p id="para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
+            <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
             :
             <div></div>
       }
