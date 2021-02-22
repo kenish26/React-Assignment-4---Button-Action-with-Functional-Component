@@ -10,7 +10,8 @@ function App() {
    console.log(paragraph);
  }
 
-
+ if(cond)
+ {
   return (
     <div id="main">
      
@@ -25,10 +26,24 @@ function App() {
       onClick={handleClick}>
         Click me
       </button>
+      </div>
+      );
+  }
+  else
+  {
+    return(
+      <div id="main">
+      <button 
+      id="click"
+      onClick={handleClick}>
+        Click me
+      </button>
+      </div>
+    );
+  }    
       
-      
-    </div>
-  );
+    
+
 }
 
 
