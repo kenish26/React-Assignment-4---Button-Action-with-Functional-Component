@@ -7,7 +7,7 @@ function App() {
  const handleClick=()=>
  {
    setCond(true);
-   console.log(paragraph);
+   
  }
 
  if(cond)
